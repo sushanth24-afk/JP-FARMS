@@ -1,0 +1,307 @@
+/* ===========================================
+                FADE ANIMATIONS
+===========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(80px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ===========================================
+                FLOATING
+===========================================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================================
+                PULSE
+===========================================*/
+
+@keyframes pulse{
+
+    0%{
+
+        box-shadow:0 0 0 0 rgba(212,160,23,.5);
+
+    }
+
+    70%{
+
+        box-shadow:0 0 0 18px rgba(212,160,23,0);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 0 0 rgba(212,160,23,0);
+
+    }
+
+}
+
+/* ===========================================
+            HERO
+===========================================*/
+
+.hero-content{
+
+    animation:fadeUp 1.2s ease;
+
+}
+
+.hero-features div{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+.hero-features div:nth-child(2){
+
+    animation-delay:.3s;
+
+}
+
+.hero-features div:nth-child(3){
+
+    animation-delay:.6s;
+
+}
+
+/* ===========================================
+            BUTTONS
+===========================================*/
+
+.btn-primary{
+
+    animation:pulse 2.5s infinite;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-5px) scale(1.04);
+
+}
+
+.btn-secondary:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================================
+            PRODUCTS
+===========================================*/
+
+.product-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.product-card img{
+
+    transition:.5s;
+
+}
+
+.product-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================================
+            ABOUT
+===========================================*/
+
+.about-image{
+
+    animation:fadeLeft 1s ease;
+
+}
+
+.about-content{
+
+    animation:fadeRight 1s ease;
+
+}
+
+/* ===========================================
+            WHY US
+===========================================*/
+
+.why-card{
+
+    transition:.35s;
+
+}
+
+.why-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+/* ===========================================
+            PROCESS
+===========================================*/
+
+.process-card{
+
+    transition:.35s;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-10px) rotate(-1deg);
+
+}
+
+/* ===========================================
+            GALLERY
+===========================================*/
+
+.gallery-grid img{
+
+    transition:.45s;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================================
+            TESTIMONIAL
+===========================================*/
+
+.testimonial-card{
+
+    transition:.35s;
+
+}
+
+.testimonial-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ===========================================
+            CONTACT
+===========================================*/
+
+.contact-right{
+
+    animation:zoomIn 1s ease;
+
+}
+
+/* ===========================================
+            WHATSAPP
+===========================================*/
+
+.whatsapp{
+
+    animation:floating 2.5s infinite;
+
+}
