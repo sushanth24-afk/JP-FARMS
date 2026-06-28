@@ -127,9 +127,25 @@ galleryImages.forEach(img => {
         PAGE LOADED
 ===========================================*/
 
+/* ===========================================
+        PRELOADER
+===========================================*/
+
 window.addEventListener("load", () => {
 
     document.body.classList.add("loaded");
+
+    const preloader = document.getElementById("preloader");
+
+    if (preloader) {
+
+        setTimeout(() => {
+
+            preloader.classList.add("hide");
+
+        }, 1200);
+
+    }
 
 });
 
